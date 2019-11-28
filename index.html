@@ -11,13 +11,13 @@
     <div class="main">
         <div class="spisok">
             <ul>
-                <li onclick="click(1)" id="item" class="active item">item1</li>
-                <li onclick="click(2)" id="item" class="item">item2</li>
-                <li onclick="click(3)" id="item" class="item">item3</li>
-                <li onclick="click(4)" id="item" class="item">item4</li>
-                <li onclick="click(5)" id="item" class="item">item5</li>
-                <li onclick="click(6)" id="item" class="item">item6</li>
-                <li onclick="click(7)" id="item" class="item">item7</li>
+                <li onclick="click(1)" id="item 1" class="active item">item1</li>
+                <li onclick="click(2)" id="item 2" class="item">item2</li>
+                <li onclick="click(3)" id="item 3" class="item">item3</li>
+                <li onclick="click(4)" id="item 4" class="item">item4</li>
+                <li onclick="click(5)" id="item 5" class="item">item5</li>
+                <li onclick="click(6)" id="item 6" class="item">item6</li>
+                <li onclick="click(7)" id="item 7" class="item">item7</li>
             </ul>
             <div>
                 c2015
@@ -37,7 +37,7 @@
     <script>
         function click(a){
             var lis = document.getElementsByClassName("item");
-            var li = document.getElementById("item");
+            var li = document.getElementById("item "+String(a));
             li.className = li.className + "active";
         }
     </script>
