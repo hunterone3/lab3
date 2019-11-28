@@ -1,8 +1,18 @@
 .main{
     margin-top: 200px;
     margin-left: 400px;
+    display: flex;
+
 }
 .spisok{
-    background-color: rgb(188, 245, 255);
+    background-color: aquamarine;
+    height: 500px;
+    padding: 10px;
+
+}
+.text{
+    background-color: rgb(197, 102, 189);
+    padding: 10px;
+
 }
 
