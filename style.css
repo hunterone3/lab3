@@ -16,10 +16,12 @@
 
 }
 .active{
-    background-color: chartreuse ;
+    background-color: rgb(197, 102, 189) ;
 }
 
 .hide{
     display: none;
 }
+
+
 
