@@ -1,47 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>3LB</title>
 </head>
+
 <body>
-    <div class="main">
-        <div class="spisok">
-            <ul>
-                <li onclick="click(1)" id="item 1" class="active item">item1</li>
-                <li onclick="click(2)" id="item 2" class="item">item2</li>
-                <li onclick="click(3)" id="item 3" class="item">item3</li>
-                <li onclick="click(4)" id="item 4" class="item">item4</li>
-                <li onclick="click(5)" id="item 5" class="item">item5</li>
-                <li onclick="click(6)" id="item 6" class="item">item6</li>
-                <li onclick="click(7)" id="item 7" class="item">item7</li>
-            </ul>
-            <div>
-                c2015
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <p class="header_text">Logo</p>
             </div>
-    
+            <div class="titul">
+                <p class="header_text">Frontend test, second level</p>
+            </div>
+        </header>
+        <div class="main">
 
+            <div class="block block_left">
+                <div class="item item1" id="Item1">Item1</div>
+                <div class="item item2" id="Item2">Item2</div>
+                <div class="item item3" id="Item3">Item3</div>
+                <div class="item item4" id="Item4">Item4</div>
+                <div class="item item5" id="Item5">Item5</div>
+                <div class="item item6" id="Item6">Item6</div>
+                <div class="item item7" id="Item7">Item7</div>
+                <div class="item item8">
+                    <p>
+                        (c)2019
+                    </p>
+                </div>
+            </div>
+            <div class="block block_right">
+                <div class="txt" id="txt">
+
+                    <div class="txt1" id="txt1">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, doloribus.</p>
+                    </div>
+                    <div class="txt2" id="txt2">
+                        <p>Lorem item 2 lerwer</p>
+                    </div>
+                    <div class="txt3" id="txt3">
+                        <p>Text fot hityy gava stya jet ridds</p>
+                    </div>
+                    <div class="txt4" id="txt4">
+                        <p>Inrek notim yio</p>
+                    </div>
+                    <div class="txt5" id="txt5">
+                        gipo kinde ream jinaf eril flis dio
+                    </div>
+                    <div class="txt6" id="txt6">
+                        <p>hiut hamen koloj nem abest lika</p>
+                    </div>
+                    <div class="txt7" id="txt7">
+                        <p>pote finda leky jore dist reni gilhan tore</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="text">
-            u cant here see here something interesting
-
-        </div>
-
-
-
     </div>
     <script>
-        function click(a){
-            var lis = document.getElementsByClassName("item");
-            var li = document.getElementById("item "+String(a));
-            li.className = li.className + "active";
-        }
-    </script>
+        let block1 = document.getElementById("Item1");
+        let block2 = document.getElementById("Item2");
+        let block3 = document.getElementById("Item3");
+        let block4 = document.getElementById("Item4");
+        let block5 = document.getElementById("Item5");
+        let block6 = document.getElementById("Item6");
+        let block7 = document.getElementById("Item7");
+        let txt1 = document.getElementById("txt1");
+        let txt2 = document.getElementById("txt2");
+        let txt3 = document.getElementById("txt3");
+        let txt4 = document.getElementById("txt4");
+        let txt5 = document.getElementById("txt5");
+        let txt6 = document.getElementById("txt6");
+        let txt7 = document.getElementById("txt7");
+        block1.addEventListener('click', function change() {
+            txt1.style.visibility = "visible";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "hidden";
+            block1.style.background = "rgb(60, 0, 83)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(187, 45, 243)";
+        });
+        block2.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(60, 0, 83)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(187, 45, 243)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "visible";
 
-    
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "hidden";
+        });
+        block3.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(60, 0, 83)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(187, 45, 243)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "visible";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "hidden";
+
+        });
+        block4.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(60, 0, 83)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(187, 45, 243)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "visible";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "hidden";
+
+        });
+        block5.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(60, 0, 83)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(187, 45, 243)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "visible";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "hidden";
+
+        });
+        block6.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(60, 0, 83)";
+            block7.style.background = "rgb(187, 45, 243)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "visible";
+            txt7.style.visibility = "hidden";
+
+        });
+        block7.addEventListener('click', function change() {
+            block1.style.background = "rgb(187, 45, 243)";
+            block2.style.background = "rgb(187, 45, 243)";
+            block3.style.background = "rgb(187, 45, 243)";
+            block4.style.background = "rgb(187, 45, 243)";
+            block5.style.background = "rgb(187, 45, 243)";
+            block6.style.background = "rgb(187, 45, 243)";
+            block7.style.background = "rgb(60, 0, 83)";
+            txt1.style.visibility = "hidden";
+            txt2.style.visibility = "hidden";
+            txt3.style.visibility = "hidden";
+            txt4.style.visibility = "hidden";
+            txt5.style.visibility = "hidden";
+            txt6.style.visibility = "hidden";
+            txt7.style.visibility = "visible";
+
+        });
+    </script>
 </body>
+
 </html>

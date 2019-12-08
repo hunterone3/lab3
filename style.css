@@ -1,27 +1,177 @@
-.main{
-    margin-top: 200px;
-    margin-left: 400px;
-    display: flex;
-
-}
-.spisok{
-    background-color: aquamarine;
-    height: 500px;
-    padding: 10px;
-
-}
-.text{
-    background-color: rgb(197, 102, 189);
-    padding: 10px;
-
-}
-.active{
-    background-color: rgb(197, 102, 189) ;
-}
-
-.hide{
-    display: none;
-}
-
-
-
+        body {
+            color: white;
+        }
+        
+        .wrapper {
+            height: 700px;
+            width: 800px;
+            background: #000;
+            margin: auto;
+        }
+        
+        header {
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+            background: rgb(255, 185, 185);
+            height: 15%;
+        }
+        
+        .main {
+            display: flex;
+            /* border: 4px dotted green; */
+            height: 85%;
+        }
+        
+        .block_left {
+            height: 100%;
+            background: rgb(43, 36, 36);
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .item {
+            background: rgb(60, 0, 83);
+            height: 10%;
+            /* border: 4px dotted red; */
+            text-align: center;
+            border: 4px double black;
+        }
+        
+        .item8 {
+            flex: 1;
+            background: rgb(255, 185, 185);
+            height: 40px;
+            /* border: 4px dotted red; */
+            position: relative;
+        }
+        
+        .item8>p {
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+        }
+        
+        .block_right {
+            height: 100%;
+            flex: 9;
+            /* background: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .txt {
+            height: 100%;
+            position: relative;
+            text-align: center;
+        }
+        
+        .txt1 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt2 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt3 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt4 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt5 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt6 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .txt7 {
+            color: black;
+            height: 100%;
+            width: 100%;
+            background: rgb(226, 255, 251);
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .wrapper {
+                height: 700px;
+                width: 600px;
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            .wrapper {
+                height: 600px;
+                width: 500px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .wrapper {
+                height: 500px;
+                width: 400px;
+            }
+            .header_text {
+                font-size: 20px;
+            }
+        }
+        
+        @media only screen and (max-width: 450px) {
+            .wrapper {
+                height: 400px;
+                width: 300px;
+            }
+            .header_text {
+                font-size: 15px;
+            }
+            .txt {
+                font-size: 10px;
+            }
+        }
+        
+        @media only screen and (max-width: 330px) {
+            .wrapper {
+                height: 300px;
+                width: 200px;
+            }
+        }
